@@ -1,6 +1,7 @@
 
 
 Subset of figures from my publications, arranged roughly in chronological order.
+fig | fig | fig2
 [![fig01](../assets/thumbnails/thumbnails/01.jpg)](../assets/thumbnails/fullsize/01.jpg) | [![fig02](../assets/thumbnails/thumbnails/02.jpg)](../assets/thumbnails/fullsize/02.jpg) | [![fig03](../assets/thumbnails/thumbnails/03.jpg)](../assets/thumbnails/fullsize/03.jpg)
 [![fig04](../assets/thumbnails/thumbnails/04.jpg)](../assets/thumbnails/fullsize/04.jpg) | [![fig05](../assets/thumbnails/thumbnails/05.jpg)](../assets/thumbnails/fullsize/05.jpg) | [![fig06](../assets/thumbnails/thumbnails/06.jpg)](../assets/thumbnails/fullsize/06.jpg)
 [![fig11](../assets/thumbnails/thumbnails/11.jpg)](../assets/thumbnails/fullsize/11.jpg) | [![fig12](../assets/thumbnails/thumbnails/12.jpg)](../assets/thumbnails/fullsize/12.jpg) | [![fig13](../assets/thumbnails/thumbnails/13.jpg)](../assets/thumbnails/fullsize/13.jpg)
