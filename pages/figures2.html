@@ -3,19 +3,60 @@
 <head>
   <title>ImageGallery test</title>
 
-  <link rel="stylesheet" href="image-gallery/dist/image-gallery.css">
+  <!-- <link rel="stylesheet" href="image-gallery/dist/image-gallery.css"> -->
+  <link rel="stylesheet" href="Gallery/css/blueimp-gallery.min.css">
 
+  <style>
+    .image-gallery {
+      margin-bottom: 0px;
+    }
+  </style>
 </head>
 <body>
 
-  <script src="image-gallery/dist/image-gallery.js"></script>
+  <!-- <script src="image-gallery/dist/image-gallery.js"></script> -->
+  <script src="Gallery/js/blueimp-gallery.min.js"></script>
 
-  <p style="margin-top: 0px;">lazy loading of full size images (when entering viewport):</p>
 
-  <div class="image-gallery lazy-loading" data-image-spacing="10" style="max-width: 1800px">
-    <a href="../assets/figures/03.jpg" title="03">
-      <img src="../assets/figures/03.jpg" data-full-src="../assets/figures/03.jpg">
-    </a>
+  <div id="blueimp-gallery" class="blueimp-gallery">
+      <div class="slides"></div>
+      <h3 class="title"></h3>
+      <a class="prev">‹</a>
+      <a class="next">›</a>
+      <a class="close">×</a>
+      <a class="play-pause"></a>
+      <ol class="indicator"></ol>
+  </div>
+
+  <div id="links">
+      <a href="../assets/figures/01.jpg" title="01">
+          <img src="../assets/figures/01.jpg" alt="01">
+      </a>
+      <a href="../assets/figures/02.jpg" title="02">
+          <img src="../assets/figures/02.jpg" alt="02">
+      </a>
+      <a href="../assets/figures/03.jpg" title="03">
+          <img src="../assets/figures/03.jpg" alt="03">
+      </a>
+  </div>
+
+
+  <script>
+    document.getElementById("links").onclick = function (event) {
+        event = event || window.event;
+        var target = event.target || event.srcElement,
+            link = target.src ? target.parentNode : target,
+            options = {index: link, event: event},
+            links = this.getElementsByTagName('a');
+        blueimp.Gallery(links, options);
+    };
+  </script>
+
+
+  BREAK
+
+  <div class="image-gallery lazy-loading" data-image-spacing="5" style="max-width: 1800px">
+    <img src="../assets/figures/01.jpg" data-full-src="../assets/figures/01.jpg">
     <img src="../assets/figures/02.jpg" data-full-src="../assets/figures/02.jpg">
     <img src="../assets/figures/03.jpg" data-full-src="../assets/figures/03.jpg">
     <img src="../assets/figures/04.jpg" data-full-src="../assets/figures/04.jpg">
