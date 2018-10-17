@@ -1,40 +1,46 @@
-<link rel="stylesheet" href="css/blueimp-gallery.min.css">
+<html>
 
-<!-- The Gallery as lightbox dialog, should be a child element of the document body -->
-<div id="blueimp-gallery" class="blueimp-gallery">
-    <div class="slides"></div>
-    <h3 class="title"></h3>
-    <a class="prev">‹</a>
-    <a class="next">›</a>
-    <a class="close">×</a>
-    <a class="play-pause"></a>
-    <ol class="indicator"></ol>
-</div>
+  <head>
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+  </head>
 
 
-<div id="links">
-    <a href="../assets/figures/01.jpg" title="01">
-        <img src="images/thumbnails/banana.jpg" alt="Banana">
-    </a>
-    <a href="../assets/figures/02.jpg" title="01">
-        <img src="images/thumbnails/apple.jpg" alt="Apple">
-    </a>
-    <a href="../assets/figures/03.jpg" title="03">
-        <img src="images/thumbnails/orange.jpg" alt="Orange">
-    </a>
-</div>
+  <body>
+    <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+    <div id="blueimp-gallery" class="blueimp-gallery">
+        <div class="slides"></div>
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+    </div>
 
+    <div id="links">
+        <a href="../assets/figures/01.jpg" title="01">
+            <img src="images/thumbnails/banana.jpg" alt="Banana">
+        </a>
+        <a href="../assets/figures/02.jpg" title="01">
+            <img src="images/thumbnails/apple.jpg" alt="Apple">
+        </a>
+        <a href="../assets/figures/03.jpg" title="03">
+            <img src="images/thumbnails/orange.jpg" alt="Orange">
+        </a>
+    </div>
 
-<script src="js/blueimp-gallery.min.js"></script>
+    <script src="js/blueimp-gallery.min.js"></script>
 
+    <script>
+      document.getElementById('links').onclick = function (event) {
+          event = event || window.event;
+          var target = event.target || event.srcElement,
+              link = target.src ? target.parentNode : target,
+              options = {index: link, event: event},
+              links = this.getElementsByTagName('a');
+          blueimp.Gallery(links, options);
+      };
+    </script>
 
-<script>
-document.getElementById('links').onclick = function (event) {
-    event = event || window.event;
-    var target = event.target || event.srcElement,
-        link = target.src ? target.parentNode : target,
-        options = {index: link, event: event},
-        links = this.getElementsByTagName('a');
-    blueimp.Gallery(links, options);
-};
-</script>
+  </body>
+</html>
