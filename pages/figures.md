@@ -1,4 +1,5 @@
 
+
 Subset of figures from my publications, arranged roughly in chronological order.
 ![fig01](../assets/figures/01.jpg) | ![fig02](../assets/figures/02.jpg) | ![fig03](../assets/figures/03.jpg)
 ![fig04](../assets/figures/04.jpg) | ![fig05](../assets/figures/05.jpg) | ![fig06](../assets/figures/06.jpg)
