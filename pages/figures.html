@@ -1,51 +1,70 @@
 <html>
 
-  <head>
-    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
-  </head>
+<head>
+<link rel="stylesheet" href="css/blueimp-gallery.min.css">
+</head>
 
 
-  <body>
+<body>
 
-    Trying gallery
+Trying gallery
+<img src="../assets/figures/01.jpg" alt="../assets/figures/01.jpg">
 
-    <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
-    <div id="blueimp-gallery" class="blueimp-gallery">
-        <div class="slides"></div>
-        <h3 class="title"></h3>
-        <a class="prev">‹</a>
-        <a class="next">›</a>
-        <a class="close">×</a>
-        <a class="play-pause"></a>
-        <ol class="indicator"></ol>
-    </div>
+<!--
+<h2>Lightbox image gallery</h2>
+<!-- The container for the list of example images -->
+<div id="links" class="links"></div>
+<!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery">
+  <div class="slides"></div>
+  <h3 class="title"></h3>
+  <a class="prev">‹</a>
+  <a class="next">›</a>
+  <a class="close">×</a>
+  <a class="play-pause"></a>
+  <ol class="indicator"></ol>
+</div>
+ -->
 
-    <img src="../assets/figures/01.jpg" alt="../assets/figures/01.jpg">
 
-    <div id="links">
-        <a href="../assets/figures/01.jpg" title="01">
-            <img src="../assets/figures/01.jpg" alt="01">
-        </a>
-        <a href="../assets/figures/02.jpg" title="02">
-            <img src="../assets/figures/02.jpg" alt="02">
-        </a>
-        <a href="../assets/figures/03.jpg" title="03">
-            <img src="../assets/figures/03.jpg" alt="03">
-        </a>
-    </div>
+<div id="links">
+    <a href="../assets/figures/01.jpg" title="01">
+        <img src="../assets/figures/01.jpg" alt="01">
+    </a>
+    <a href="../assets/figures/02.jpg" title="02">
+        <img src="../assets/figures/02.jpg" alt="02">
+    </a>
+    <a href="../assets/figures/03.jpg" title="03">
+        <img src="../assets/figures/03.jpg" alt="03">
+    </a>
+</div>
 
-    <script src="js/blueimp-gallery.min.js"></script>
+<!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
 
-    <script>
-      document.getElementById('links').onclick = function (event) {
-          event = event || window.event;
-          var target = event.target || event.srcElement,
-              link = target.src ? target.parentNode : target,
-              options = {index: link, event: event},
-              links = this.getElementsByTagName('a');
-          blueimp.Gallery(links, options);
-      };
-    </script>
 
-  </body>
+
+
+<script src="js/blueimp-gallery.min.js"></script>
+
+<script>
+  document.getElementById('links').onclick = function (event) {
+      event = event || window.event;
+      var target = event.target || event.srcElement,
+          link = target.src ? target.parentNode : target,
+          options = {index: link, event: event},
+          links = this.getElementsByTagName('a');
+      blueimp.Gallery(links, options);
+  };
+</script>
+
+</body>
 </html>
