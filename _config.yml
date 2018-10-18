@@ -1,2 +1,5 @@
-theme: jekyll-theme-cayman
+theme: jekyll-theme-minimal
 markdown: kramdown
+title: John Vickers
+description: John Vickers' Website
+logo: "assets/site/logo.png"
