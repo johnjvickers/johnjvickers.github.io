@@ -13,5 +13,5 @@ Website of John Vickers
 &nbsp;
 &nbsp;
 
-## [my movies data analysis blog](https://poptcorn.github.io/)
-> small data analyses of films using [TMDb](https://www.themoviedb.org) data
+## [films  data analysis blog](https://poptcorn.github.io/)
+> analyses of cinema using [TMDb](https://www.themoviedb.org) data
