@@ -1,7 +1,13 @@
 Website of John Vickers
 
-# [list of publications](pages/publications.md)
-# [list of published pictures](pages/figures.md)
-# [cv/resume](assets/site/cv.pdf)
-
-# [my movies data analysis blog](https://poptcorn.github.io/)
+### [publications](pages/publications.md)
+> titles and abstracts of my first author publications along with links to full texts.
+### [figures](pages/figures.md)
+> a selection of figures in my publications
+### [cv](assets/site/cv.pdf)
+> pdf of my curriculum vitae
+&nbsp;
+&nbsp;
+&nbsp;
+### [my movies data analysis blog](https://poptcorn.github.io/)
+> small data analyses of films using [tMDB](https://www.themoviedb.org) data.
