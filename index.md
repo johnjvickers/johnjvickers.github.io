@@ -1,4 +1,7 @@
 Website of John Vickers
 
-# [1 - List of publications](pages/publications.md)
-# [1 - List of published figures](pages/figures.md)
+# [list of publications](pages/publications.md)
+# [list of published figures](pages/figures.md)
+# [cv/resume](assets/site/cv.pdf)
+
+# [my movies data analysis blog](https://www.poptcorn.github.io)

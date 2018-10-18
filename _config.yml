@@ -1,5 +1,5 @@
 theme: jekyll-theme-minimal
 markdown: kramdown
 title: John Vickers
-description: John Vickers' Website
+description: [John Vickers' Website](https://www.johnjvickers.github.io)
 logo: "assets/site/logo.png"
