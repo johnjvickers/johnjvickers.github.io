@@ -1,7 +1,8 @@
-Website of John Vickers
+## [about](pages/about.md)
+> who i am and what i do
 
 ## [publications](pages/publications.md)
-> titles and abstracts of my first author publications along with links to full texts.
+> titles and abstracts of my first author publications along with links to full texts
 
 ## [figures](pages/figures.md)
 > a selection of figures in my publications
@@ -13,5 +14,5 @@ Website of John Vickers
 &nbsp;
 &nbsp;
 
-## [films  data analysis blog](https://poptcorn.github.io/)
-> analyses of cinema using [TMDb](https://www.themoviedb.org) data
+## [my films data analysis website](https://poptcorn.github.io/)
+> analyses of cinema using [themoviedb.org](https://www.themoviedb.org) data
