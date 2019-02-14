@@ -1,5 +1,5 @@
-## [about](pages/about.md)
-> who i am and what i do
+%## [about](pages/about.md)
+%> who i am and what i do
 
 ## [publications](pages/publications.md)
 > titles and abstracts of my first author publications along with links to full texts
